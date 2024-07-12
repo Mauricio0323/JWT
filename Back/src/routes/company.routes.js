@@ -1,14 +1,13 @@
 import { Router } from 'express'
 import{getCompanys,getCompany,createCompanys,deleteCompanys,updateCompanys} from '../controllers/company.controller.js'
 
-
 const router = Router()
 
-router.get('/companty', getCompanys)
-router.get('/companty/:id', getCompany)
-router.post('/companty', createCompanys)
-router.delete('/companty:id', deleteCompanys)
-router.put('/companty/:id', updateCompanys)
+router.get('/company', getCompanys)
+router.get('/company/:id', getCompany)
+router.post('/company', createCompanys)
+router.delete('/company:id', deleteCompanys)
+router.put('/company/:id', updateCompanys)
 
 
 
