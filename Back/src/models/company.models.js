@@ -14,6 +14,15 @@ const CompanySchema = new mongoose.Schema(
             trim: true,
             unique: true,
         },
+        image: {
+            data: Buffer,
+            contentType: String
+        },
+        pdf: {
+            data: Buffer,
+            contentType: String
+        }
+
     },
     {
         timestamps: true,
